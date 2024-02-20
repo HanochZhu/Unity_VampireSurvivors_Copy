@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using CommonFramework.Runtime;
 using UnityEngine;
 
-public class GameSettings : MonoBehaviour
+public class GameSettings : MonoSingleton<GameSettings>
 {
-    void Start()
+    public void UpdateGameGlobalSetting()
     {
-        Screen.SetResolution(1280, 720, false);
+
     }
 }

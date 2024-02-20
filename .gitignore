@@ -7,3 +7,4 @@ obj/
 Logs/
 *.csproj
 *.sln
+Assembly-CSharp.csproj
