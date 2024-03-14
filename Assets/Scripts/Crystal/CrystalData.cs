@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Character Data", menuName = "Scriptable Object/Crystal Data", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "Crystal Data", menuName = "Scriptable Object/Crystal Data", order = int.MaxValue)]
 public class CrystalData : ScriptableObject
 {
     public enum CrystalType

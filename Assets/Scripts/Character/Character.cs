@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class Character : MonoBehaviour
 {
-    [SerializeField] CharacterData characterData;
+    [SerializeField] CreatureData characterData;
     Sprite sprite;
     RuntimeAnimatorController controller;
     Animator animator;
@@ -116,7 +116,7 @@ public abstract class Character : MonoBehaviour
         speed += speed * value / 100;
     }
 
-    public CharacterData.CharacterType GetCharacterType()
+    public CreatureData.CharacterType GetCharacterType()
     {
         return characterData.GetCharacterType();
     }

@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using CommonFramework.Runtime;
+using CommonFramework.Runtime.FiniteStateMachine;
 using UnityEngine;
 
 namespace VS.Framework.Game
 {
     public class GameManager : MonoSingleton<GameManager>
     {
-        StateMachine game;
-
-
+        private StateMachine game;
+        private LoginState loginState;
+        
 
         public void StartGame()
         {
+            InitService();
+
             GameSettings.Instance.UpdateGameGlobalSetting();
-
-
+            
         }
 
         public void QuitGame()
@@ -31,7 +33,11 @@ namespace VS.Framework.Game
         {
 
         }
-    }
 
+        private void InitService()
+        {
+
+        }
+    }
 }
 

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -55,17 +55,17 @@ public class EnemySpawner : MonoBehaviour
             {
                 default:
                 case 1:
-                    newEnemy = ObjectPooling.GetObject(CharacterData.CharacterType.FlyingEye);
+                    newEnemy = ObjectPooling.GetObject(CreatureData.CharacterType.FlyingEye);
                     break;
                 case 2:
-                    newEnemy = ObjectPooling.GetObject(CharacterData.CharacterType.Goblin);
+                    newEnemy = ObjectPooling.GetObject(CreatureData.CharacterType.Goblin);
                     break;
                 case 3:
-                    newEnemy = ObjectPooling.GetObject(CharacterData.CharacterType.Mushroom);
+                    newEnemy = ObjectPooling.GetObject(CreatureData.CharacterType.Mushroom);
                     break;
                 case 4:
                 case 5:
-                    newEnemy = ObjectPooling.GetObject(CharacterData.CharacterType.Skeleton);
+                    newEnemy = ObjectPooling.GetObject(CreatureData.CharacterType.Skeleton);
                     break;
             }
 
@@ -75,7 +75,7 @@ public class EnemySpawner : MonoBehaviour
 
             if(stage == 5)
             {
-                newEnemy = ObjectPooling.GetObject(CharacterData.CharacterType.FlyingEye);
+                newEnemy = ObjectPooling.GetObject(CreatureData.CharacterType.FlyingEye);
                 newEnemy.transform.position = RandomPosition();
                 newEnemy.SetActive(true);
                 enemyList.Add(newEnemy);

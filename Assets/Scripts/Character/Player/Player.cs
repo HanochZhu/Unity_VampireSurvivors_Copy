@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -90,10 +90,10 @@ public class Player : Character
     {
         switch (GetComponentInParent<Player>().GetCharacterType())
         {
-            case CharacterData.CharacterType.Knight:
+            case CreatureData.CharacterType.Knight:
                 Inventory.GetInstance().AddWeapon(WeaponData.WeaponType.Whip);
                 break;
-            case CharacterData.CharacterType.Bandit:
+            case CreatureData.CharacterType.Bandit:
                 Inventory.GetInstance().AddWeapon(WeaponData.WeaponType.Axe);
                 break;
         }

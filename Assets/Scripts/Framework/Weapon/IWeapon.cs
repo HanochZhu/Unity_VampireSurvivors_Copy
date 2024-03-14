@@ -5,6 +5,4 @@ using UnityEngine;
 public interface IWeapon
 {
     void SetParameters(WeaponData weaponData, int attackPower, float inactiveDelay, WeaponSpawner.Direction direction);
-
-
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Framework.Map
@@ -16,7 +17,9 @@ namespace Framework.Map
     {
         protected void ConfigMap(MapData data);
 
-        internal IEnemy GetConfigedEnemy();
+        internal EnemySpawnConfigItem GetConfigedEnemy(float time);
+
+        internal List<EnemySpawnConfigItem> GetEnemySpawnConfig();
 
         internal void EnterHiddenRoom(IPlayer player, IMap hiddenRoom);
 

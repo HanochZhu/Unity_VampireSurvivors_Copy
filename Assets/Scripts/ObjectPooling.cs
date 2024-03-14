@@ -39,7 +39,7 @@ public class ObjectPooling : MonoBehaviour
 
     void Initialize()
     {
-        foreach(CharacterData.CharacterType characterType in Enum.GetValues(typeof(CharacterData.CharacterType)))
+        foreach(CreatureData.CharacterType characterType in Enum.GetValues(typeof(CreatureData.CharacterType)))
         {
             if (IsPlayer(characterType)) continue;
 
@@ -95,16 +95,16 @@ public class ObjectPooling : MonoBehaviour
         switch (type)
         {
             default:
-            case CharacterData.CharacterType.FlyingEye:
+            case CreatureData.CharacterType.FlyingEye:
                 newObject = Instantiate(instance.flyingEyePrefab);
                 break;
-            case CharacterData.CharacterType.Goblin:
+            case CreatureData.CharacterType.Goblin:
                 newObject = Instantiate(instance.goblinPrefab);
                 break;
-            case CharacterData.CharacterType.Mushroom:
+            case CreatureData.CharacterType.Mushroom:
                 newObject = Instantiate(instance.mushroomPrefab);
                 break;
-            case CharacterData.CharacterType.Skeleton:
+            case CreatureData.CharacterType.Skeleton:
                 newObject = Instantiate(instance.skeletonPrefab);
                 break;
 
@@ -181,12 +181,12 @@ public class ObjectPooling : MonoBehaviour
         instance.poolingDict[type.ToString()].Enqueue(deadEnemy);
     }
 
-    bool IsPlayer(CharacterData.CharacterType characterType)
+    bool IsPlayer(CreatureData.CharacterType characterType)
     {
         switch (characterType)
         {
-            case CharacterData.CharacterType.Knight:
-            case CharacterData.CharacterType.Bandit:
+            case CreatureData.CharacterType.Knight:
+            case CreatureData.CharacterType.Bandit:
                 return true;
             default:
                 return false;

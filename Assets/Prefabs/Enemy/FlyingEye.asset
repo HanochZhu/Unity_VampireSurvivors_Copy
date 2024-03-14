@@ -9,13 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65449227f41cf4f42b7b8c81fbac6c45, type: 3}
+  m_Script: {fileID: 11500000, guid: 449ed4f80edc3442fbb3a69a0b292312, type: 3}
   m_Name: FlyingEye
   m_EditorClassIdentifier: 
-  sprite: {fileID: -4795363162621231457, guid: 6d7cd4f7505dc674c891ca8946cfd98b, type: 3}
   controller: {fileID: 9100000, guid: 4c3364b0ef8a1d341be103651ade604b, type: 2}
   characterType: 0
-  healthPoint: 7
-  attackPower: 40
-  defencePower: 0
-  speed: 20
+  Name: FlyingEye
+  sprite: {fileID: -4795363162621231457, guid: 6d7cd4f7505dc674c891ca8946cfd98b, type: 3}
+  healthPoint: 1
+  attackPower: 1
+  defencePower: 1
+  speed: 1
+  maxHealth: 10
+  enemyType: 0

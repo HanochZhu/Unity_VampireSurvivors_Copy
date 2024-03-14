@@ -13,7 +13,6 @@ namespace Framework.Map
     {
         private IPlayer m_hero;
         private IMap m_currentMap;
-        private EnemySystem enemySystem;
 
         public void InitWorld(IMap currentMap)
         {
