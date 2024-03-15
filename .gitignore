@@ -8,3 +8,4 @@ Logs/
 *.csproj
 *.sln
 Assembly-CSharp.csproj
+.vscode
